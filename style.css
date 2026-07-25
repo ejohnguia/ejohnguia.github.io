@@ -80,6 +80,9 @@ a:focus-visible, button:focus-visible{
   outline-offset:2px;
 }
 
+/* ---------- utilities ---------- */
+.no-border{border-bottom:none;}
+
 .wrap{
   max-width:960px;
   margin:0 auto;
@@ -357,6 +360,16 @@ header.nav{
   .metric:first-child{border-top:none;}
 }
 
+.metrics-caption{
+  font-family:var(--data-mono);
+  font-size:11px;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--text-faint);
+  text-align:center;
+  padding:12px 28px 0;
+}
+
 /* ---------- section shell ---------- */
 section{
   position:relative;
@@ -623,6 +636,7 @@ footer p{
   .hero .role{color:#b45309 !important;}
   .hero p.lede{color:#333 !important; font-size:11pt; max-width:none;}
   .hero p.lede strong{color:#000 !important;}
+  #about .lede{color:#333 !important; font-size:11pt; max-width:none;}
   .pipeline::before{background:#b45309 !important;}
   .job::before{border-color:#b45309 !important; background:#fff !important;}
   .job-title{color:#000 !important;}
