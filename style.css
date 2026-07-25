@@ -571,54 +571,6 @@ footer p{
   color:var(--text-faint);
 }
 
-/* ---------- contact form ---------- */
-.contact-form{
-  margin-top:40px;
-  padding-top:40px;
-  border-top:1px solid var(--line);
-  max-width:560px;
-  margin-left:auto;
-  margin-right:auto;
-  text-align:left;
-}
-.form-group{
-  margin-bottom:20px;
-}
-.form-group label{
-  display:block;
-  font-family:var(--data-mono);
-  font-size:12px;
-  letter-spacing:0.06em;
-  text-transform:uppercase;
-  color:var(--blue);
-  margin-bottom:6px;
-}
-.form-group input,
-.form-group textarea{
-  width:100%;
-  background:var(--panel);
-  border:1px solid var(--line);
-  border-radius:var(--radius);
-  padding:12px 14px;
-  font-family:var(--sans);
-  font-size:15px;
-  color:var(--text);
-  transition:border-color .15s ease;
-}
-.form-group input:focus,
-.form-group textarea:focus{
-  outline:none;
-  border-color:var(--amber);
-}
-.form-group textarea{
-  resize:vertical;
-  min-height:120px;
-}
-.contact-form .btn-primary{
-  width:100%;
-  justify-content:center;
-}
-
 /* ---------- print stylesheet ---------- */
 @media print{
   .bg-grid,
