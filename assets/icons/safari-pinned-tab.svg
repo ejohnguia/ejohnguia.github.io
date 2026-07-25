@@ -1,5 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
-  <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle"
-        font-family="JetBrains Mono, monospace" font-weight="800" font-size="80" fill="#f5a623">EJG</text>
-  <circle cx="157" cy="30" r="15" fill="#f5a623"/>
+  <image width="192" height="192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAAAAAB3tzPbAAAAzklEQVR4nO3Xyw6DIBAFUG36/79Mt1V89BYwNT1nJckMIw5EnSYAAAAAAAAAAAAAAAAAAAAANsxxRvk8c0zoUppQ3q5PcseErj2y8LI7uCi0ki0gmLwcDjsVmeIOtJQaM020gKrSfukxoRuaOvALojPfacucSm4q6cBV9x8Vuv0WShaQv7W/lBR6DipV74IgNPFXW6h+iPu9HhO6oakDnQ5F0zTZAoJS8+GwU5E4enHizlKTb+Rg2pXb/9AAAAAAAAAAAAAAAAAAAAAAsOkFga8jHNqELTUAAAAASUVORK5CYII="/>
 </svg>
