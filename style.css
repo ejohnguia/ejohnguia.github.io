@@ -35,7 +35,7 @@
 *{box-sizing:border-box;}
 html{
   scroll-behavior:smooth;
-  scroll-margin-top:80px;
+  scroll-margin-top:100px;
 }
 body{
   margin:0;

@@ -51,9 +51,9 @@ Open `http://localhost:8000`
 
 - Responsive dark theme with CSS Grid/Flexbox
 - Mobile hamburger navigation (accessible, keyboard support)
-- Key metrics strip (90 subs, 1000+ users, 2TB/day, 3yrs)
+- Key metrics strip summarizing career impact (see live site for current figures)
 - Experience timeline with pipeline visual
-- Skills grid (Cloud, IaC/GitOps, AI Tooling, Languages)
+- Skills grid (Cloud, IaC/GitOps, AI Tooling, Programming Languages)
 - Certifications with verified Credly/Microsoft links
 - JSON-LD Person schema for SEO
 - `prefers-reduced-motion` support
