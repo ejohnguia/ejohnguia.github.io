@@ -1,5 +1,6 @@
 :root{
   --bg:#0a0e13;
+  --bg-rgb:10,14,19;
   --panel:#11161d;
   --panel-2:#0d1218;
   --line:#212a34;
@@ -19,6 +20,7 @@
 
 [data-theme="light"]{
   --bg:#f8fafc;
+  --bg-rgb:248,250,252;
   --panel:#ffffff;
   --panel-2:#f1f5f9;
   --line:#e2e8f0;
@@ -142,7 +144,7 @@ header.nav{
   position:sticky;
   top:0;
   z-index:20;
-  background:rgba(10,14,19,0.88);
+  background:rgba(var(--bg-rgb), 0.88);
   backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line);
 }
@@ -481,12 +483,22 @@ section{
 .job-compact .job-title{font-size:15px;}
 .job-compact .job-company{color:var(--text-dim); font-weight:600;}
 .job-compact .job-meta{margin-bottom:8px;}
-.job-compact p{
+.job-compact p,
+.job-compact ul{
   margin:0;
   color:var(--text-dim);
   font-size:14px;
   max-width:70ch;
 }
+.job-compact ul{
+  padding-left:18px;
+}
+.job-compact li{
+  margin-bottom:6px;
+  font-size:14px;
+}
+.job-compact li:last-child{margin-bottom:0;}
+.job-compact li strong{color:var(--text); font-weight:600;}
 
 /* ---------- skills ---------- */
 .skills-grid{
