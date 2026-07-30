@@ -4,7 +4,7 @@
   --line:#e2e0da;
   --ink:#1b1c19;
   --ink-dim:#63645d;
-  --ink-faint:#98978e;
+  --ink-faint:#6f6e68;
   --accent:#1f6f66;
   --accent-soft:#e4efec;
   --sans:'IBM Plex Sans',-apple-system,sans-serif;
@@ -17,13 +17,13 @@
   --line:#2b3033;
   --ink:#f1f0ea;
   --ink-dim:#a3a89f;
-  --ink-faint:#6d746c;
+  --ink-faint:#838a80;
   --accent:#5fd6bd;
   --accent-soft:#1e3330;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#15181a; --panel:#1b1f22; --line:#2b3033; --ink:#f1f0ea; --ink-dim:#a3a89f; --ink-faint:#6d746c; --accent:#5fd6bd; --accent-soft:#1e3330;
+    --bg:#15181a; --panel:#1b1f22; --line:#2b3033; --ink:#f1f0ea; --ink-dim:#a3a89f; --ink-faint:#838a80; --accent:#5fd6bd; --accent-soft:#1e3330;
   }
 }
 *{box-sizing:border-box;}
