@@ -1,3 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
-  <image width="192" height="192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAAAAAB3tzPbAAAAzklEQVR4nO3Xyw6DIBAFUG36/79Mt1V89BYwNT1nJckMIw5EnSYAAAAAAAAAAAAAAAAAAAAANsxxRvk8c0zoUppQ3q5PcseErj2y8LI7uCi0ki0gmLwcDjsVmeIOtJQaM020gKrSfukxoRuaOvALojPfacucSm4q6cBV9x8Vuv0WShaQv7W/lBR6DipV74IgNPFXW6h+iPu9HhO6oakDnQ5F0zTZAoJS8+GwU5E4enHizlKTb+Rg2pXb/9AAAAAAAAAAAAAAAAAAAAAAsOkFga8jHNqELTUAAAAASUVORK5CYII="/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <rect x="3" y="1" width="10" height="5"/>
+  <rect x="3" y="8" width="10" height="2"/>
+  <rect x="3" y="12" width="10" height="2"/>
 </svg>
