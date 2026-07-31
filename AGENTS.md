@@ -29,7 +29,7 @@ npx serve .
 
 - Vanilla HTML/CSS — **no build step**
 - Fonts: JetBrains Mono, IBM Plex Sans/Mono (Google Fonts)
-- Dark theme, CSS variables in `:root`, CSS Grid/Flexbox layout
+- Light "ledger" theme (cream/teal), CSS variables in `:root`, CSS Grid/Flexbox layout
 - JSON-LD Person schema for SEO
 - `prefers-reduced-motion` support, accessible nav
 
