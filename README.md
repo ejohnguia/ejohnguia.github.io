@@ -9,7 +9,7 @@ Personal portfolio/resume site deployed to GitHub Pages.
 ## Stack
 
 - **HTML/CSS** — Vanilla, no build step
-- **Fonts** — JetBrains Mono, IBM Plex Sans/Mono (via Google Fonts)
+- **Fonts** — Archivo, IBM Plex Sans, JetBrains Mono (via Google Fonts)
 - **Deployment** — GitHub Pages via GitHub Actions
 
 ## Local Development
@@ -39,7 +39,7 @@ Open `http://localhost:8000`
 
 ```
 ├── index.html      # Main page (semantic HTML, JSON-LD schema)
-├── style.css       # Dark theme, responsive grid, CSS variables
+├── style.css       # Light 'ledger' theme (cream/teal), responsive grid, CSS variables
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml   # GitHub Pages deployment
@@ -49,7 +49,7 @@ Open `http://localhost:8000`
 
 ## Features
 
-- Responsive dark theme with CSS Grid/Flexbox
+- Responsive light/dark theme (ledger design) with CSS Grid/Flexbox
 - Mobile hamburger navigation (accessible, keyboard support)
 - Key metrics strip summarizing career impact (see live site for current figures)
 - Experience timeline with pipeline visual

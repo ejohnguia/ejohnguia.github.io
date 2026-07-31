@@ -19,7 +19,7 @@ npx serve .
 
 ```
 ├── index.html      # Main page (semantic HTML, JSON-LD Person schema)
-├── style.css       # Dark theme, CSS Grid/Flexbox, CSS variables in :root
+├── style.css       # Light 'ledger' theme (cream/teal), CSS Grid/Flexbox, CSS variables in :root
 ├── .github/workflows/deploy.yml  # GitHub Pages deploy workflow
 ├── CNAME           # Optional custom domain (gitignored, set via secret)
 └── assets/         # Static assets (icons, images, manifest)
