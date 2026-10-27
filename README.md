@@ -1,4 +1,4 @@
-# Ezra John Guia — Cloud Infrastructure & Platform Engineer
+# Ezra John Guia — GitHub Platform Consultant
 
 Personal portfolio/resume site deployed to GitHub Pages.
 
