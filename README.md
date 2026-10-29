@@ -9,7 +9,7 @@ Personal portfolio/resume site deployed to GitHub Pages.
 ## Stack
 
 - **HTML/CSS** — Vanilla, no build step
-- **Fonts** — Archivo, IBM Plex Sans, JetBrains Mono (via Google Fonts)
+- **Fonts** — Archivo and IBM Plex Sans (Google Fonts), system monospace
 - **Deployment** — GitHub Pages via GitHub Actions
 
 ## Local Development
@@ -29,11 +29,9 @@ Open `http://localhost:8000`
 2. GitHub Actions workflow builds and deploys automatically
 3. Configure Pages source: **GitHub Actions** (not `gh-pages` branch)
 
-### Required Secrets (if using custom domain)
+### Custom domain (optional)
 
-| Secret | Description |
-|--------|-------------|
-| `CNAME` | Custom domain (e.g., `ezrajohnguia.dev`) |
+Set the domain in the repository's **Settings → Pages** and include a valid `CNAME` file in the site root before deploying. No Actions secret is required.
 
 ## Project Structure
 
@@ -43,7 +41,6 @@ Open `http://localhost:8000`
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml   # GitHub Pages deployment
-├── CNAME           # Optional: custom domain
 └── README.md
 ```
 
@@ -51,17 +48,25 @@ Open `http://localhost:8000`
 
 - Responsive light/dark theme (ledger design) with CSS Grid/Flexbox
 - Mobile hamburger navigation (accessible, keyboard support)
-- Key metrics strip summarizing career impact (see live site for current figures)
-- Experience timeline with pipeline visual
-- Skills grid (Cloud, IaC/GitOps, AI Tooling, Programming Languages)
+- Selected experience metrics and a responsive experience timeline
+- Skills grouped by GitHub/CI/CD, cloud, infrastructure, platform tooling, and languages
 - Certifications with verified Credly/Microsoft links
 - JSON-LD Person schema for SEO
 - `prefers-reduced-motion` support
+- Print-friendly résumé layout
 - All external links: `rel="noopener noreferrer"`
 
 ## Customization
 
 Edit `index.html` for content, `style.css` for design tokens (colors in `:root`).
+
+### Brand assets
+
+- `assets/icons/workflow-master.png` and `assets/images/og-background.png` are the original supplied artwork; keep them unchanged.
+- `assets/icons/workflow-mark.svg` is the clean, transparent vector version of the full pipeline mark. The master PNG has a baked-in checkerboard, not an alpha channel.
+- `assets/icons/favicon.svg` uses a three-lane adaptation for small sizes and changes teal with the browser's color scheme. The header uses its silhouette with the site's selected theme color.
+- PNG favicons use the small mark at 16/32px; touch and manifest icons use the full mark on cream. The Safari pinned-tab SVG is monochrome.
+- `assets/images/og-image.png` is the 1200×630 social preview, composed from the supplied background, clean mark, and typeset name and title.
 
 ## License
 

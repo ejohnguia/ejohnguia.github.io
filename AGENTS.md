@@ -13,7 +13,7 @@ npx serve .
 
 **Deploy:** Push to `main` branch — GitHub Actions deploys automatically to GitHub Pages.
 
-**Required secret for custom domain:** `CNAME` (e.g., `ezrajohnguia.dev`)
+**Custom domain:** Configure the domain in repository Settings → Pages and add a valid `CNAME` file at the site root if needed.
 
 ## Structure
 
@@ -21,14 +21,13 @@ npx serve .
 ├── index.html      # Main page (semantic HTML, JSON-LD Person schema)
 ├── style.css       # Light 'ledger' theme (cream/teal), CSS Grid/Flexbox, CSS variables in :root
 ├── .github/workflows/deploy.yml  # GitHub Pages deploy workflow
-├── CNAME           # Optional custom domain (gitignored, set via secret)
 └── assets/         # Static assets (icons, images, manifest)
 ```
 
 ## Stack
 
 - Vanilla HTML/CSS — **no build step**
-- Fonts: JetBrains Mono, IBM Plex Sans/Mono (Google Fonts)
+- Fonts: Archivo and IBM Plex Sans (Google Fonts), system monospace
 - Light "ledger" theme (cream/teal), CSS variables in `:root`, CSS Grid/Flexbox layout
 - JSON-LD Person schema for SEO
 - `prefers-reduced-motion` support, accessible nav
@@ -44,4 +43,4 @@ npx serve .
 
 - Content: edit `index.html` (semantic HTML, JSON-LD schema in `<head>`)
 - Design tokens: edit CSS variables in `style.css:1` (`:root`)
-- Custom domain: add `CNAME` secret in GitHub repo settings (value: `yourdomain.com`)
+- Custom domain: configure GitHub Pages settings and include a valid `CNAME` file at the site root
