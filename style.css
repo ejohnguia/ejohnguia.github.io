@@ -42,7 +42,7 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--accent); outline-o
 header.nav{position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(8px); border-bottom:1px solid var(--line);}
 .nav-inner{max-width:800px; margin:0 auto; padding:16px 24px; display:flex; align-items:center; justify-content:space-between; gap:16px;}
 .nav-id{display:flex; align-items:center; gap:10px; font-family:var(--display); font-weight:700; font-size:15px;}
-.nav-mark{width:28px; height:28px; flex-shrink:0; background:var(--accent); -webkit-mask:url("assets/icons/favicon.svg") center/contain no-repeat; mask:url("assets/icons/favicon.svg") center/contain no-repeat;}
+.nav-mark{width:28px; height:28px; flex-shrink:0; background:var(--accent); -webkit-mask:url("assets/icons/workflow-mark.svg") center/contain no-repeat; mask:url("assets/icons/workflow-mark.svg") center/contain no-repeat;}
 .nav-right{display:flex; align-items:center; gap:22px;}
 .nav-links{display:flex; gap:24px; margin:0; padding:0; font-size:13.5px;}
 .nav-links a{text-decoration:none; color:var(--ink-dim); transition:color .15s ease;}

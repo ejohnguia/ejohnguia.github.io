@@ -64,8 +64,9 @@ Edit `index.html` for content, `style.css` for design tokens (colors in `:root`)
 
 - `assets/icons/workflow-master.png` and `assets/images/og-background.png` are the original supplied artwork; keep them unchanged.
 - `assets/icons/workflow-mark.svg` is the clean, transparent vector version of the full pipeline mark. The master PNG has a baked-in checkerboard, not an alpha channel.
-- `assets/icons/favicon.svg` uses a three-lane adaptation for small sizes and changes teal with the browser's color scheme. The header uses its silhouette with the site's selected theme color.
-- PNG favicons use the small mark at 16/32px; touch and manifest icons use the full mark on cream. The Safari pinned-tab SVG is monochrome.
+- `assets/icons/favicon.svg`, its 16/32px PNG fallbacks, and the monochrome Safari pinned-tab SVG use the same six-lane geometry as `workflow-mark.svg`. The SVG favicon changes teal with the browser's color scheme.
+- The header uses `workflow-mark.svg` as a silhouette with the site's selected theme color. Touch and manifest icons use the same full mark on cream.
+- Favicon, touch-icon, manifest, social-image, and stylesheet URLs use a `v` query parameter to refresh cached assets when the branding changes. Update manifest icon URLs along with the manifest link when replacing those icons.
 - `assets/images/og-image.png` is the 1200×630 social preview, composed from the supplied background, clean mark, and typeset name and title.
 
 ## License
