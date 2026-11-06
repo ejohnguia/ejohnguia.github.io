@@ -62,7 +62,7 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap"></noscript>
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=4">
 
 <script type="application/ld+json">
 {
@@ -202,22 +202,78 @@
 
 <main id="main">
   <section class="hero wrap">
-    <div class="eyebrow">GitHub Platform Consultant</div>
-    <h1>Ezra John Guia</h1>
-    <p class="role">Enterprise GitHub migrations, governance, CI/CD, and developer enablement</p>
-    <p class="lede">
-      My consulting focus is helping enterprise teams adopt GitHub as a secure, sustainable development platform.
-      I bring a background in cloud infrastructure and platform engineering across Azure and AWS.
-    </p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="https://www.linkedin.com/in/ezrajohn-guia/" target="_blank" rel="noopener noreferrer">LinkedIn →</a>
-      <a class="btn btn-ghost" href="https://github.com/ejohnguia" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <div class="hero-copy">
+      <div class="eyebrow">Platform engineering <span aria-hidden="true">/</span> Edmonton, AB</div>
+      <h1>Ezra John Guia<span class="hero-period">.</span></h1>
+      <p class="role">I help teams build a better way to build.</p>
+      <p class="lede">
+        I help enterprise teams adopt GitHub as a secure, sustainable development platform—from migration and governance to CI/CD and developer enablement.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/ezrajohn-guia/" target="_blank" rel="noopener noreferrer">Let’s connect <span aria-hidden="true">↗</span></a>
+        <a class="btn btn-ghost" href="https://github.com/ejohnguia" target="_blank" rel="noopener noreferrer">Explore my GitHub</a>
+      </div>
     </div>
-    <div class="stat-caption">Selected platform engineering experience</div>
-    <div class="stat-line">
-      <span><b>90</b> Azure subscriptions</span>
-      <span><b>1,000+</b> IT users supported</span>
-      <span><b>2 TB/day</b> SOC 2 pipeline</span>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="visual-label"><span class="visual-pulse"></span> PLATFORMS, BUILT TO FLOW</div>
+      <svg viewBox="0 0 500 360" role="presentation">
+        <path class="flow-line" d="M92 93h130c32 0 32 64 64 64h116M92 267h130c32 0 32-64 64-64h116"/>
+        <circle class="flow-node" cx="92" cy="93" r="5"/>
+        <circle class="flow-node" cx="92" cy="267" r="5"/>
+        <circle class="flow-node" cx="408" cy="157" r="5"/>
+        <circle class="flow-node" cx="408" cy="203" r="5"/>
+        <rect class="diagram-card diagram-card-top" x="48" y="52" width="130" height="82" rx="12"/>
+        <rect class="diagram-card diagram-card-center" x="183" y="137" width="154" height="86" rx="14"/>
+        <rect class="diagram-card diagram-card-bottom" x="322" y="226" width="130" height="82" rx="12"/>
+        <path class="diagram-icon" d="M69 82h20M69 91h28M69 100h16M70 111h28"/>
+        <text class="diagram-overline" x="105" y="82">GOVERN</text>
+        <text class="diagram-title" x="105" y="104">A secure base</text>
+        <text class="diagram-small" x="105" y="119">Clear standards</text>
+        <circle class="diagram-ring" cx="218" cy="180" r="18"/>
+        <path class="diagram-icon" d="M210 180h16M218 172v16"/>
+        <text class="diagram-overline" x="249" y="174">ENABLE</text>
+        <text class="diagram-title" x="249" y="195">Better workflows</text>
+        <text class="diagram-small" x="249" y="210">Tools that scale</text>
+        <path class="diagram-icon" d="M344 255h20M344 264h28M344 273h16M345 284h28"/>
+        <text class="diagram-overline" x="372" y="256">DELIVER</text>
+        <text class="diagram-title" x="372" y="278">With confidence</text>
+        <text class="diagram-small" x="372" y="293">Teams in flow</text>
+        <path class="diagram-spark" d="M402 58v16M394 66h16M128 300v12M122 306h12"/>
+      </svg>
+      <div class="visual-caption"><span>01 — 03</span> From platform foundations to developer flow</div>
+    </div>
+    <div class="stat-caption">Selected platform engineering impact</div>
+    <dl class="stat-line">
+      <div class="stat-item"><dt>90</dt><dd>Azure subscriptions</dd></div>
+      <div class="stat-item"><dt>1,000+</dt><dd>IT users supported</dd></div>
+      <div class="stat-item"><dt>2 TB/day</dt><dd>SOC 2 pipeline</dd></div>
+    </dl>
+  </section>
+
+  <section class="wrap impact" aria-labelledby="impact-title">
+    <div class="section-head">
+      <div class="eyebrow">A few things made better</div>
+      <h2 id="impact-title">Work that moves the needle.</h2>
+    </div>
+    <div class="impact-grid">
+      <article class="impact-card">
+        <span class="impact-kicker">CLOUD GOVERNANCE <span aria-hidden="true">↗</span></span>
+        <div class="impact-value">42% <span>→</span> 100%</div>
+        <h3>Compliance, at scale.</h3>
+        <p>Remediated 1,000+ VMs across 30 Azure subscriptions with policy as code.</p>
+      </article>
+      <article class="impact-card impact-card-featured">
+        <span class="impact-kicker">CLOUD EFFICIENCY <span aria-hidden="true">↗</span></span>
+        <div class="impact-value">$12.3k<span class="impact-unit">/mo</span></div>
+        <h3>Savings put to work.</h3>
+        <p>Realized monthly savings by extending auto-shutdown across the VM fleet.</p>
+      </article>
+      <article class="impact-card">
+        <span class="impact-kicker">PLATFORM ENGINEERING <span aria-hidden="true">↗</span></span>
+        <div class="impact-value">4 hrs <span>→</span> 10 min</div>
+        <h3>Incidents, unblocked.</h3>
+        <p>Cut daily incident lookup and ticket creation with AI-powered integrations.</p>
+      </article>
     </div>
   </section>
 

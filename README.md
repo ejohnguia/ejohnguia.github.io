@@ -48,9 +48,9 @@ Set the domain in the repository's **Settings → Pages** and include a valid `C
 
 ## Features
 
-- Responsive light/dark theme (ledger design) with CSS Grid/Flexbox
+- Responsive light/dark editorial theme with CSS Grid/Flexbox
 - Mobile hamburger navigation (accessible, keyboard support)
-- Selected experience metrics and a responsive experience timeline
+- Illustrated platform-engineering hero, selected impact cards, and a responsive experience timeline
 - Skills grouped by GitHub/CI/CD, cloud, infrastructure, platform tooling, and languages
 - Certifications with verified Credly/Microsoft links
 - JSON-LD Person schema for SEO
