@@ -6,11 +6,14 @@ Personal portfolio/resume site deployed to GitHub Pages.
 
 [https://ejohnguia.github.io](https://ejohnguia.github.io)
 
+![Portfolio preview](assets/images/site-preview.png)
+
 ## Stack
 
 - **HTML/CSS** — Vanilla, no build step
 - **Fonts** — Archivo and IBM Plex Sans (Google Fonts), system monospace
-- **Deployment** — GitHub Pages via GitHub Actions
+- **Deployment** — GitHub Pages from the `main` branch
+- **Validation** — HTML Validate and Playwright (development only)
 
 ## Local Development
 
@@ -23,13 +26,38 @@ npx serve .
 
 Open `http://localhost:8000`
 
+## Checks
+
+The site needs no Node.js tooling to serve or deploy. For development checks,
+use Node.js 22 and Python 3:
+
+```bash
+npm ci
+npx playwright install chromium
+npm test
+```
+
+On Linux, Playwright may also require system libraries; use
+`npx playwright install --with-deps chromium` when needed.
+
+Checks cover HTML, local assets and fragment links, responsive layouts from
+320px to 1440px, section/caption spacing, theme persistence, mobile navigation,
+and print styles. GitHub Actions runs these checks on pushes to `main` and pull
+requests; this validation workflow does not deploy the site.
+
+To refresh the README screenshot, start the local server on port 8000 and run:
+
+```bash
+npm run preview:screenshot
+```
+
 ## Deploy to GitHub Pages
 
-Push to `main` to trigger the GitHub Pages branch deployment. The repository's
-`Deploy to GitHub Pages` workflow is manual-only; do not run it while an
-automatic Pages deployment is in progress.
+Push to `main` to trigger the GitHub Pages branch deployment. There is no
+separate repository deployment workflow.
 
-Configure Pages to deploy from the `main` branch.
+Configure Settings → Pages → Build and deployment to use **Deploy from a branch**,
+with `main` and `/ (root)`.
 
 ### Custom domain (optional)
 
@@ -39,10 +67,12 @@ Set the domain in the repository's **Settings → Pages** and include a valid `C
 
 ```
 ├── index.html      # Main page (semantic HTML, JSON-LD schema)
-├── style.css       # Light 'ledger' theme (cream/teal), responsive grid, CSS variables
-├── .github/
-│   └── workflows/
-│       └── deploy.yml   # GitHub Pages deployment
+├── style.css       # Editorial light/dark theme, responsive grid, design tokens
+├── assets/         # Icons, original artwork, and social/README previews
+├── tests/          # Playwright browser checks
+├── playwright.config.js
+├── .github/workflows/validate.yml  # Validation only
+├── LICENSE         # MIT
 └── README.md
 ```
 

@@ -1,6 +1,6 @@
 # AGENTS.md — ejohnguia.github.io
 
-Personal portfolio site (static HTML/CSS) deployed to GitHub Pages via GitHub Actions.
+Personal portfolio site (static HTML/CSS) deployed from the `main` branch to GitHub Pages.
 
 ## Commands
 
@@ -11,7 +11,9 @@ python3 -m http.server 8000
 npx serve .
 ```
 
-**Deploy:** Push to `main` branch — GitHub Pages' branch deployment runs automatically. The repository workflow is manual-only.
+**Checks:** Node.js 22 and Python 3; run `npm ci`, `npx playwright install chromium`, then `npm test`. Node.js dependencies are development-only.
+
+**Deploy:** Push to `main` branch — GitHub Pages' branch deployment runs automatically. The repository workflow validates the site; it does not deploy.
 
 **Custom domain:** Configure the domain in repository Settings → Pages and add a valid `CNAME` file at the site root if needed.
 
@@ -19,8 +21,9 @@ npx serve .
 
 ```
 ├── index.html      # Main page (semantic HTML, JSON-LD Person schema)
-├── style.css       # Light 'ledger' theme (cream/teal), CSS Grid/Flexbox, CSS variables in :root
-├── .github/workflows/deploy.yml  # GitHub Pages deploy workflow
+├── style.css       # Editorial light/dark theme, CSS Grid/Flexbox, CSS variables in :root
+├── .github/workflows/validate.yml  # HTML and browser checks
+├── tests/          # Playwright checks
 └── assets/         # Static assets (icons, images, manifest)
 ```
 
@@ -28,16 +31,17 @@ npx serve .
 
 - Vanilla HTML/CSS — **no build step**
 - Fonts: Archivo and IBM Plex Sans (Google Fonts), system monospace
-- Light "ledger" theme (cream/teal), CSS variables in `:root`, CSS Grid/Flexbox layout
+- Editorial light/dark theme, CSS variables in `:root`, CSS Grid/Flexbox layout
+- Base CSS precedes responsive overrides; print overrides come last
+- `.wrap` controls horizontal gutters only; section rules own vertical spacing
 - JSON-LD Person schema for SEO
 - `prefers-reduced-motion` support, accessible nav
 
 ## Deploy
 
-- Trigger: GitHub Pages branch deployment on pushes to `main`; the repository workflow is manual-only
-- Uses `actions/configure-pages@v5`, `actions/upload-pages-artifact@v3`, `actions/deploy-pages@v4`
-- Permissions: `contents: read`, `pages: write`, `id-token: write`
-- GitHub Pages source: `main` branch
+- Trigger: GitHub Pages branch deployment on pushes to `main`
+- GitHub Pages source: `main` branch, `/ (root)`
+- Validation runs on pushes to `main` and pull requests with `contents: read`
 
 ## Customization
 

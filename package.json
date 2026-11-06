@@ -1,0 +1,14 @@
+{
+  "name": "ezra-john-guia-portfolio",
+  "private": true,
+  "scripts": {
+    "test": "npm run test:html && npm run test:browser",
+    "test:html": "html-validate index.html",
+    "test:browser": "playwright test",
+    "preview:screenshot": "playwright screenshot --browser=chromium --color-scheme=light --viewport-size=1440,1080 --wait-for-timeout=1500 http://127.0.0.1:8000 assets/images/site-preview.png"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "html-validate": "^11.18.0"
+  }
+}

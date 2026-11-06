@@ -23,4 +23,7 @@ yarn-error.log*
 *.tmp
 *.temp
 coverage/
+node_modules/
+test-results/
+playwright-report/
 .kilo/
