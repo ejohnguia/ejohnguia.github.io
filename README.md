@@ -25,9 +25,11 @@ Open `http://localhost:8000`
 
 ## Deploy to GitHub Pages
 
-1. Push to `main` branch
-2. GitHub Actions workflow builds and deploys automatically
-3. Configure Pages source: **GitHub Actions** (not `gh-pages` branch)
+Push to `main` to trigger the GitHub Pages branch deployment. The repository's
+`Deploy to GitHub Pages` workflow is manual-only; do not run it while an
+automatic Pages deployment is in progress.
+
+Configure Pages to deploy from the `main` branch.
 
 ### Custom domain (optional)
 

@@ -11,7 +11,7 @@ python3 -m http.server 8000
 npx serve .
 ```
 
-**Deploy:** Push to `main` branch — GitHub Actions deploys automatically to GitHub Pages.
+**Deploy:** Push to `main` branch — GitHub Pages' branch deployment runs automatically. The repository workflow is manual-only.
 
 **Custom domain:** Configure the domain in repository Settings → Pages and add a valid `CNAME` file at the site root if needed.
 
@@ -34,10 +34,10 @@ npx serve .
 
 ## Deploy
 
-- Trigger: push to `main` or manual workflow dispatch
+- Trigger: GitHub Pages branch deployment on pushes to `main`; the repository workflow is manual-only
 - Uses `actions/configure-pages@v5`, `actions/upload-pages-artifact@v3`, `actions/deploy-pages@v4`
 - Permissions: `contents: read`, `pages: write`, `id-token: write`
-- GitHub Pages source: **GitHub Actions** (not `gh-pages` branch)
+- GitHub Pages source: `main` branch
 
 ## Customization
 
